@@ -4,7 +4,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(239, 239, 239, 0.5);
+    background-color: rgba(239, 239, 239, 0.9);
     position: fixed;
 }
 #menulist{
@@ -23,12 +23,14 @@ nav{
 a{
     text-decoration: none;
     color:black;
+    font-family:verdana;
 }
 .menu:hover{
-background-color: black;
+background-color: rgba(145, 145, 145, 0.7);
 -webkit-border-radius: 8px;
 -moz-border-radius: 8px;
   border-radius: 8px;
+  color: white
 }
 a:hover{
     color: white;
@@ -46,6 +48,7 @@ a:hover{
     text-align: center;
     background-color: rgba(239, 239, 239, 0.5);
     font-size: 30px;
+    padding-top: 100px;
 }
 #thailand{
     display: flex;
@@ -119,6 +122,25 @@ a:hover{
     border-bottom-color: #99c0ff;
     border-top: 2px solid;
     border-top-color:#99c0ff;*/
+}
+#button{
+    background-color: white;
+    display: flex;
+    justify-content:center;
+}
+.site-logos{
+    width: 125px;
+    height: auto;
+}
+#contact-info{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    flex-direction: column;
+}
+#facebook{
+    flex-direction: column;
+    
 }
 @media screen and (max-width: 720px){
 nav{

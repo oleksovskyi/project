@@ -63,6 +63,7 @@ a:hover{
 #thailand{
     display: flex;
     justify-content:flex-end;
+    max-width: 600px;
 }
 #siteDescription{
     font-size: 20px;
@@ -135,7 +136,7 @@ a:hover{
     justify-content:center;
     align-items:center;
 }
-#logos{
+.logos{
     list-style-type: none;
     display: flex;
     flex-direction: row;
@@ -143,11 +144,11 @@ a:hover{
     align-items: center;
     margin-top: 35px;
 }
-#logos img{
+.logos img{
     float: left;
     width: 110px;
 }
-#logos li{
+.logos li{
     font-family: Helvetica, sans-serif;
     font-size: 25px;
     align-items:center;
@@ -179,6 +180,9 @@ nav{
     font-size: 5rem;
     display: flex;
     flex-direction: column;
+}
+#thailand{
+width: 100%;
 }
 .description{
     flex-direction:column;
@@ -215,12 +219,43 @@ nav{
     padding: 10px;
     align-items: center;
 }
+
 #slider{
    width: 100%;
    max-height: 1200px;
 }
+#bottomlogos{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 35px;
+}
 #logopic{
     display: none;
+}
+.logos{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 35px;
+}
+.logos img{
+    float: left;
+    width: 110px;
+    margin: 25px;
+}
+#text{
+    display: none;
+}
+.logos li{
+    font-family: Helvetica, sans-serif;
+    font-size: 25px;
+    align-items:center;
+    flex-direction:column;
 }
 }
 @media screen and (max-width: 450px) {

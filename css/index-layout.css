@@ -148,23 +148,31 @@ a:hover{
     width: 110px;
 }
 #logos li{
+    font-family: Helvetica, sans-serif;
+    font-size: 25px;
     align-items:center;
     flex-direction:column;
 }
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px;
+    
+}
+form input{
+    justify-content: space-between;
+}
 footer{
     bottom: 0;
-    position: fixed;
     width: 100%;
 }
 
 .footer {
-    background: blue;
-    height: 100px;
-    margin: auto;
-    width: 400px;
+    padding-top: 25px;
+    margin: 0 auto;
     text-align:center;
-    padding:10px;
-    color:#ffffff;
 }
 @media screen and (max-width: 720px){
 nav{

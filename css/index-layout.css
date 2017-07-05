@@ -71,7 +71,7 @@ a:hover{
     margin-left: 20px;
 }
 #populardishes{
-    max-width: 1000px;
+    width: 100%;
 }
 #patbingsu{
    display: flex;
@@ -193,8 +193,7 @@ width: 100%;
 #patbingsu{
     align-items: center;
     flex-direction:column;
-    border-bottom: 1px solid;
-    border-bottom-color: #4286f4;
+   
 }   
 .aboutDish{
     margin-left: 40px;
@@ -204,15 +203,13 @@ width: 100%;
     margin-top: 20px;
     align-items: center;
     flex-direction:column;
-    border-bottom: 1px solid;
-    border-bottom-color: #4286f4;
+   
 }
 #tarts{
     margin-top: 20px;
     align-items: center;
     flex-direction:column;
-    border-bottom: 1px solid;
-    border-bottom-color: #4286f4;
+    
 }
 .menu{
     font-size: 15px;

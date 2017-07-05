@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/index.css" rel="stylesheet">
     <link href="css/index-layout.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/hamburger.png">
 </head>
 <body>
         <nav>
@@ -24,61 +25,68 @@
                    <div class="description">
                       <img id="thailand" src="img/streetfood-thailand.jpg" alt="Street food Thailand">
                       <p id="siteDescription">
-                           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                            Street food is something with which we meet every day, walking along the street of the city.
                            We used to buy snacks in places because it is fast and tasty.
                            Our site was created in order to see and appreciate what people eat in fast-foods facilities in different cities and countries.
                            You can easily evaluate food, read a brief description of the dish, compare and share yours impressions of it.</p>
                    </div>
              </article>
-             <article>
+             <article id="populardishes">
                   <h2 class="caption" id="popular">Most popular</h2>
                     <div id="patbingsu">
                        <img class="dish" id="patbingsuPic" src="img/patbingsu.jpg" alt="Patbingsu">
                        <ul class="aboutDish">
-                          <li id="1-1">Korea KFC's Blueberry Patbingsu is a summer menu item with shaved ice, blueberries, blueberry syrup, and red beans.</li>
-                          <li id="1-2">Cost 250 KRW</li>
-                          <li id="1-3">Rating</li>
+                          <li class="firstrow">Korea KFC's Blueberry Patbingsu is a summer menu item with shaved ice, blueberries, blueberry syrup, and red beans.</li>
+                          <li class="secondrow">Cost 250 KRW</li>
+                          <li class="thirdrow">Rating</li>
                        </ul>
                     </div>
                     <div id="birizza">
                         <img class="dish" id="birizzaPic" src="img/birizza.jpg" alt="Birizza">
                         <ul class="aboutDish">
-                            <li>India The Birizza is Pizza Hut's twist on biryani, an Indian dish made with seasoned rice, meat and vegetables.</li>
-                            <li>Cost 65 INR</li>
-                            <li>Rating</li>
+                            <li class="firstrow">India The Birizza is Pizza Hut's twist on biryani, an Indian dish made with seasoned rice, meat and vegetables.</li>
+                            <li class="secondrow">Cost 65 INR</li>
+                            <li class="thirdrow">Rating</li>
                         </ul>
                     </div>
                     <div id="tarts">
                         <img class="dish" id="tartsPic" src="img/egg-tarts.jpg" alt="Egg Tarts">     
                         <ul class="aboutDish">
-                           <li>Singapore The KFC Egg Tart is made of egg custard baked in pastry crust. The dessert comes in several varieties, including mango, peach, red bean, coconut, and cheese.</li>
-                           <li>Cost 1.5 SGD</li>
-                           <li>Rating</li>
+                           <li class="firstrow">Singapore The KFC Egg Tart is made of egg custard baked in pastry crust. The dessert comes in several varieties, including mango, peach, red bean, coconut, and cheese.</li>
+                           <li class="secondrow">Cost 1.5 SGD</li>
+                           <li class="thirdrow">Rating</li>
                         </ul>
                     </div>
-                    <button id="button" type="button">View more</button>
+                    <div id="button">
+                        <a href="menu.html">
+                        <button id="viewmore" type="button">View more</button>
+                        </a>
+                    </div>
+                        
              </article>
              <article>
                  <h2 class="caption" id="contact">Contact us</h2>
-                 <div id="contact-info">
-                 <div id="facebook">
-                    <a href="https://facebook.com/streetfood">www.facebook.com/streetfood
-                    <img class="site-logos" src="img/facebook-logo.png" alt="Facebook logo">
-                    </a>
-                 </div>
-                 <div id="youtube">
-                    <a href="https://www.youtube.com/streetfood">www.youtube.com/streetfood
-                    <img class="site-logos" src="img/youtube-logo.png" alt="Youtube logo">
-                    </a>
-                 </div>
-                 <div id="outlook">
-                    <a href="streetfood@outlook.com">streetfood@outlook.com
-                    <img class="site-logos" src="img/outlook-logo.png" alt="Outlook logo">
-                    </a>
-                 </div>
-                 </div>
+                 <ul id="logos">
+                     <li>
+                         <p>Our Facebook account</p>
+                     <a href="https://facebook.com/streetfood">    
+                     <img src="img/facebook-logo.png" alt="facebook logo">
+                     </a>
+                     </li>
+                     <li>
+                         <p>Our Youtube chanel</p>
+                     <a href="https://youtube.com/streetfood">    
+                     <img src="img/youtube-logo.png" alt="youtube logo">
+                     </a>
+                     </li>
+                     <li>
+                    <p>Our Instagram account</p>
+                     <a href="https://instagram.com/streetfood">    
+                     <img src="img/instagram-logo.png" alt="instagram logo">
+                     </a>
+                    
+                     </li>
+                 </ul>
              </article>
     </main>
 </body>

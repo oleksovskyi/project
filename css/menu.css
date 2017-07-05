@@ -1,0 +1,9 @@
+
+
+h1{
+        text-align: center;
+}
+.info{
+    display: flex;
+    justify-content: flex-end;
+}

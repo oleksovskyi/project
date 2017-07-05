@@ -1,5 +1,8 @@
+body{
+    max-width: 1200px;
+}
 nav{
-    max-width: 1400px;
+    max-width: 1200px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -42,34 +45,33 @@ a:hover{
 #slider{
    width: 100%;
    max-height: 1000px;
+   margin-top: 75px;
 }
 .caption{
     padding: 20px 0 20px 0;
     text-align: center;
-    background-color: rgba(239, 239, 239, 0.5);
     font-size: 30px;
-    padding-top: 100px;
+    padding: 100px 0 100px 0;
 }
-#thailand{
-    display: flex;
-    flex-wrap: wrap;
-    flex-basis: 50%;
-    min-width: 30%;
-    width: inherit;
-    height: 350px;
-    margin: 0 15px 0 15px;
-}
+
 .description{
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
 }
+#thailand{
+    display: flex;
+    justify-content:flex-end;
+}
 #siteDescription{
     font-size: 20px;
     font-family: Helvetica;
+    margin-left: 20px;
 }
-
+#populardishes{
+    max-width: 1000px;
+}
 #patbingsu{
    display: flex;
    justify-content: space-between;
@@ -82,7 +84,7 @@ a:hover{
     justify-content:flex-start;
     width:250px;
     height: 250px;
-    margin-left: 15px;
+    margin: 0 auto;
 }
 #birizza{
    display: flex;
@@ -95,7 +97,7 @@ a:hover{
     justify-content:flex-start;
     width:250px;
     height: 250px;
-    margin-left: 15px;
+    margin:0 auto;
 }
 #tarts{
    display: flex;
@@ -108,13 +110,13 @@ a:hover{
     justify-content:flex-start;
     width:250px;
     height: 250px;
-    margin-left: 15px;  
+    margin: 0 auto;
 }
 .aboutDish{
-    padding-right: 60px;
+    padding: 0;
     list-style-type: none;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-direction: column;
     align-items: flex-start;
     font-size: 19px;
@@ -123,24 +125,31 @@ a:hover{
     border-top: 2px solid;
     border-top-color:#99c0ff;*/
 }
+#viewmore{
+    margin: 0 auto;
+    padding: 10px;
+}
 #button{
     background-color: white;
     display: flex;
     justify-content:center;
-}
-.site-logos{
-    width: 125px;
-    height: auto;
-}
-#contact-info{
-    display: flex;
-    justify-content: space-around;
     align-items:center;
-    flex-direction: column;
 }
-#facebook{
-    flex-direction: column;
-    
+#logos{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 35px;
+}
+#logos img{
+    float: left;
+    width: 110px;
+}
+#logos li{
+    align-items:center;
+    flex-direction:column;
 }
 @media screen and (max-width: 720px){
 nav{
@@ -150,6 +159,9 @@ nav{
 }
 .description{
     flex-direction:column;
+}
+#siteDescription{
+    margin: 0 auto;
 }
 #patbingsu{
     align-items: center;
@@ -187,4 +199,9 @@ nav{
 #logopic{
     display: none;
 }
+}
+@media screen and (max-width: 450px) {
+    .aboutDish {
+        flex-basis: 100%;
+    }
 }

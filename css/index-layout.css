@@ -151,6 +151,21 @@ a:hover{
     align-items:center;
     flex-direction:column;
 }
+footer{
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
+
+.footer {
+    background: blue;
+    height: 100px;
+    margin: auto;
+    width: 400px;
+    text-align:center;
+    padding:10px;
+    color:#ffffff;
+}
 @media screen and (max-width: 720px){
 nav{
     font-size: 5rem;

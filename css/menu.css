@@ -1,9 +1,28 @@
-
+body{
+    max-width: 1200px;
+    width: 100%;
+}
+header{
+    text-align: center;
+}
 
 h1{
         text-align: center;
+        padding: 30px 0 30px 0;
+}
+img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .info{
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
+}
+.location{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
 }

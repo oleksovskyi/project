@@ -44,32 +44,61 @@ a:hover{
 }
 #slider{
    width: 100%;
-   max-height: 1000px;
-   margin-top: 75px;
+   height: auto;
+   margin-top: 72px;
 }
 .caption{
     padding: 20px 0 20px 0;
     text-align: center;
     font-size: 30px;
-    padding: 100px 0 100px 0;
+    padding-top: 100px;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
 
-.description{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-}
-#thailand{
-    display: flex;
-    justify-content:flex-end;
-    max-width: 600px;
-}
-#siteDescription{
+.topleft {
+    position: absolute;
+    top: 200px;
+    width: 100%;
     font-size: 20px;
-    font-family: Helvetica;
-    margin-left: 20px;
+    text-align: center;
+    background-color: rgba(239, 239, 239, 0.6);
+    color: black;
 }
+#sizesmall{
+    display: none;
+}
+
+#thailand { 
+    width: 100%;
+    height: auto;
+    opacity: 0.8;
+    
+}
+table, td, th{
+    border-collapse: collapse;
+    border: none;
+}
+th{
+    height: 81px;
+}
+th, td{
+     border-bottom: 1px solid #ddd;
+}
+.rows:nth-child(odd) {background-color: #f2f2f2}
+img{
+    width: 250px;
+    height: 250px;
+}
+table{
+    width: 100%;
+}
+
+/*
 #populardishes{
     width: 100%;
 }
@@ -125,7 +154,7 @@ a:hover{
     border-bottom-color: #99c0ff;
     border-top: 2px solid;
     border-top-color:#99c0ff;*/
-}
+
 #viewmore{
     margin: 0 auto;
     padding: 10px;
@@ -143,16 +172,22 @@ a:hover{
     justify-content: space-between;
     align-items: center;
     margin-top: 35px;
+    background-color: rgba(239, 239, 239, 0.9);
 }
 .logos img{
     float: left;
+    height: auto;
     width: 110px;
+    margin: 25px;
 }
 .logos li{
     font-family: Helvetica, sans-serif;
     font-size: 25px;
     align-items:center;
     flex-direction:column;
+}
+#text{
+    margin-top: 0;
 }
 form{
     display: flex;
@@ -175,25 +210,34 @@ footer{
     margin: 0 auto;
     text-align:center;
 }
-@media screen and (max-width: 720px){
+@media screen and (max-width: 722px){
 nav{
     font-size: 5rem;
     display: flex;
     flex-direction: column;
 }
-#thailand{
-width: 100%;
+#slider{
+    margin-top: 95px;
 }
-.description{
+.container{
+    display: none;
+}
+#sizesmall{
+    display: flex;
     flex-direction:column;
+    align-items:center;
+   
 }
-#siteDescription{
-    margin: 0 auto;
+#sizesmall p{
+    text-align: center;
+    font-size: 25px;
+     order: 1;
 }
 #patbingsu{
     align-items: center;
     flex-direction:column;
-   
+    border-bottom: 1px solid;
+    border-bottom-color: #4286f4;
 }   
 .aboutDish{
     margin-left: 40px;
@@ -203,31 +247,24 @@ width: 100%;
     margin-top: 20px;
     align-items: center;
     flex-direction:column;
-   
+    border-bottom: 1px solid;
+    border-bottom-color: #4286f4;
 }
 #tarts{
     margin-top: 20px;
     align-items: center;
     flex-direction:column;
-    
+    border-bottom: 1px solid;
+    border-bottom-color: #4286f4;
 }
 .menu{
     font-size: 15px;
     padding: 10px;
     align-items: center;
 }
-
 #slider{
    width: 100%;
    max-height: 1200px;
-}
-#bottomlogos{
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 35px;
 }
 #logopic{
     display: none;
@@ -239,24 +276,40 @@ width: 100%;
     justify-content: space-between;
     align-items: center;
     margin-top: 35px;
+    
 }
 .logos img{
-    float: left;
-    width: 110px;
-    margin: 25px;
+    width: 210px;
+    margin: 15px;
 }
 #text{
     display: none;
 }
-.logos li{
-    font-family: Helvetica, sans-serif;
-    font-size: 25px;
-    align-items:center;
-    flex-direction:column;
 }
+/*
+@media screen and (min-width: 757px){
+    .description{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 577px){
+    #slider{
+        margin-top:42px;
+    }
+}
+@media screen and (max-width: 311px){
+    #slider{
+        margin-top:65px;
+    }
+    #thailand{
+        display: none;
 }
 @media screen and (max-width: 450px) {
     .aboutDish {
         flex-basis: 100%;
     }
 }
+*/

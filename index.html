@@ -20,53 +20,94 @@
         </nav>
     <main>
             <img id="slider" src="img/streetfood.jpg" alt="Burger photo">
+             
+                   <h2 class="caption" id="about">About us</h2>
+                     <div class="container">
+                        <img id="thailand" src="img/streetfood-thailand.jpg" alt="Thailand streetfood">
+                          <div class="topleft">Street food is something with which we meet every day, walking along the street of the city. We used to buy snacks in places because it is fast and tasty. Our site was created in order to see and appreciate what people eat in fast-foods facilities in different cities and countries. You can easily evaluate food, read a brief description of the dish, compare and share yours impressions of it.
+                          </div>
+                     </div>
+             
+             <article id="sizesmall">
+                 <img id="thailand" src="img/streetfood-thailand.jpg" alt="Thailand streetfood">
+                 <p>Street food is something with which we meet every day, walking along the street of the city. We used to buy snacks in places because it is fast and tasty. Our site was created in order to see and appreciate what people eat in fast-foods facilities in different cities and countries. You can easily evaluate food, read a brief description of the dish, compare and share yours impressions of it.</p>
+             </article>
              <article>
-                 <h2 class="caption" id="about">About us</h2>
-                   <div class="description">
-                      <img id="thailand" src="img/streetfood-thailand.jpg" alt="Street food Thailand">
-                      <p id="siteDescription">
-                           Street food is something with which we meet every day, walking along the street of the city.
-                           We used to buy snacks in places because it is fast and tasty.
-                           Our site was created in order to see and appreciate what people eat in fast-foods facilities in different cities and countries.
-                           You can easily evaluate food, read a brief description of the dish, compare and share yours impressions of it.</p>
-                   </div>
-             </article>
-             <article id="populardishes">
-                  <h2 class="caption" id="popular">Most popular</h2>
-                    <div id="patbingsu">
-                       <img class="dish" id="patbingsuPic" src="img/patbingsu.jpg" alt="Patbingsu">
-                       <ul class="aboutDish">
-                          <li class="firstrow">Korea KFC's Blueberry Patbingsu is a summer menu item with shaved ice, blueberries, blueberry syrup, and red beans.</li>
-                          <li class="secondrow">Cost 250 KRW</li>
-                          <li class="thirdrow">Rating</li>
-                       </ul>
-                    </div>
-                    <div id="birizza">
-                        <img class="dish" id="birizzaPic" src="img/birizza.jpg" alt="Birizza">
-                        <ul class="aboutDish">
-                            <li class="firstrow">India The Birizza is Pizza Hut's twist on biryani, an Indian dish made with seasoned rice, meat and vegetables.</li>
-                            <li class="secondrow">Cost 65 INR</li>
-                            <li class="thirdrow">Rating</li>
-                        </ul>
-                    </div>
-                    <div id="tarts">
-                        <img class="dish" id="tartsPic" src="img/egg-tarts.jpg" alt="Egg Tarts">     
-                        <ul class="aboutDish">
-                           <li class="firstrow">Singapore The KFC Egg Tart is made of egg custard baked in pastry crust. The dessert comes in several varieties, including mango, peach, red bean, coconut, and cheese.</li>
-                           <li class="secondrow">Cost 1.5 SGD</li>
-                           <li class="thirdrow">Rating</li>
-                        </ul>
-                    </div>
-                    <div id="button">
-                        <a href="menu.html">
-                        <button id="viewmore" type="button">View more</button>
-                        </a>
-                    </div>
-                        
-             </article>
+                 <h2 class="caption" id="popular">Most popular</h2>
+                     <div>
+    <table>
+        <tr>
+            <td rowspan="4">
+                <img src="img/patbingsu.jpg" alt="Patbingsu picture">
+            </td>
+        </tr>
+        <tr class="rows">
+           <td>Location</td>
+           <td>Korea</td>
+        </tr>
+        <tr class="rows">
+           <td>About the dish</td>
+           <td>KFC's Blueberry Patbingsu is a summer menu item with shaved ice, blueberries, blueberry syrup, and red beans.</td>
+        </tr>
+        <tr class="rows">
+           <td>Cost</td>
+           <td>250 KRW</td>
+        </tr>
+    </table>
+    </div>
+    <div>
+        <table>
+        <tr>
+            <td rowspan="4">
+                <img src="img/birizza.jpg" alt="Birizza picture">
+            </td>
+        </tr>
+        <tr class="rows">
+           <td>Location</td>
+           <td>India</td>
+        </tr>
+        <tr class="rows">
+           <td>About the dish</td>
+           <td>The Birizza is Pizza Hut's twist on biryani, an Indian dish made with seasoned rice, meat and vegetables.</td>
+        </tr>
+        <tr class="rows">
+           <td>Cost</td>
+           <td>65 INR</td>
+        </tr>
+        </table>
+    </div>
+    <div>
+        <table>
+        <tr>
+            <td rowspan="4">
+                <img src="img/egg-tarts.jpg" alt="Birizza picture">
+            </td>
+        </tr>
+        <tr class="rows">
+           <td>Location</td>
+           <td>Singapore </td>
+        </tr>
+        <tr class="rows">
+           <td>About the dish</td>
+           <td>KFC Egg Tart is made of egg custard baked in pastry crust. It includes mango, peach, red bean, coconut, and cheese.</td>
+        </tr>
+        <tr class="rows">
+           <td>Cost</td>
+           <td>1.5 SGD</td>
+        </tr>
+        </table>
+    </div>
+</article>
+    <div id="button">
+        <a href="menu.html">
+          <button id="viewmore" type="button">View more</button>
+        </a>
+    </div>
+
+             
              <article>
                  <h2 class="caption" id="contact">Contact us</h2>
-                 <ul class="logos" id="pics">
+                 <ul class="logos">
                      <li>
                         <a href="https://facebook.com/streetfood">    
                         <img src="img/facebook-logo.png" alt="facebook logo">
@@ -100,11 +141,11 @@
                  </div>
              </article>
              <article>
-                 <form>
+                 <form id="form">
                      <input type="name" name="your-name" placeholder="Your Name" size="30">
                      <input type="email" name="email" placeholder="Enter Your email adress" size="30">
                      <textarea name="message" placeholder="Your message"></textarea>
-                     <button type="submit">Select</button>
+                     <button type="submit">Send</button>
                  </form>
              </article>
     </main>

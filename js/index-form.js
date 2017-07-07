@@ -6,10 +6,11 @@ $(function() {
 function sendForm(e) {
 	e.preventDefault();
 	$.ajax({
-		url: "https://formspree.io/lvivzatochka@gmail.com",
+		url: "https://formspree.io/oleksovskyi@outlook.com",
 		method: "POST",
 		data: {
-			Name: $('#name').val(),
+			FirstName: $('#first_name').val(),
+			LastName:$('#last_name').val,
 			Email: $('#mail').val(),
             TelephoneNumber:$('#telephone').val(),
             Text:$('#Mymessage').val()
@@ -17,7 +18,7 @@ function sendForm(e) {
 		dataType: "json"
 	})
 	.done(function () {
-        document.getElementById("contact-us").reset();
-        alert("Повідомлення надіслано.Дякуємо!");
+        document.getElementById("contact_form").reset();
+        alert("Thank you for your message");
     });
 }

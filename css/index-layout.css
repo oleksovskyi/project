@@ -42,11 +42,6 @@ a:hover{
     height: inherit;
     width: 200px;
 }
-/*#slider{
-   width: 100%;
-   height: auto;
-   margin-top: 72px;
-}*/
 
 .carousel-inner{
    
@@ -55,71 +50,65 @@ a:hover{
 .carousel-inner img{
     width: 100%;
 }
- 
+#about img{
+    max-width:300px;
+    padding-right:10px;
+}
+#about p{
+    background-color: lightgrey;
+    border-radius:5%;
+    padding:7px;
+    font-size: 18px;
+}
+#about{
+    width: 100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:row;
+}
 .caption{
-    padding: 10px 0 10px 0;
     text-align: center;
     font-size: 30px;
-    padding-top: 100px;
+    padding: 25px;
 }
-.container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    max-width: 1200px;
-    width: 100%;
-}
-
-.topleft {
-    position: inherit;
-    position: absolute;
-    top: 200px;
-    width: 100%;
-    font-size: 20px;
-    text-align: center;
-    background-color: rgba(239, 239, 239, 0.6);
-    color: black;
-}
-#sizesmall{
-    display: none;
-}
-
-#thailand { 
-    width: 100%;
-    height: auto;
-    opacity: 0.8;
-    
-}
-table, td, th{
-    border-collapse: collapse;
-    border: none;
-}
-th{
-    height: 81px;
-}
-th, td{
-     border-bottom: 1px solid #ddd;
-}
-.rows:nth-child(odd) {background-color: #f2f2f2}
-img{
+.dishpic img{
+    margin-left:20px;
     width: 250px;
     height: 250px;
 }
 table{
-    width: 100%;
+    padding-top:10px;
+height: 250px;
+
 }
+table, th, td{
+    text-align:center;
+    border-collapse: collapse;
+    border: none;
+}
+th, td{
+     border-bottom: 1px solid #ddd;
+     border-right:  1px solid #ddd;
+}
+.responTable{
+    padding-top: 10px;
+}
+.rows:nth-child(odd) {background-color: #f2f2f2}
 
 #viewmore{
+    
     margin: 0 auto;
     padding: 10px;
 }
 #button{
     background-color: white;
+    margin: 0 auto;
+    /*
     display: flex;
     justify-content:center;
     align-items:center;
-}
+*/}
 .logos{
     list-style-type: none;
     display: flex;
@@ -147,6 +136,9 @@ table{
 #success_message{
   display: none;
 }
+.container{
+    margin-top: 40px;
+}
 footer{
     bottom: 0;
     width: 100%;
@@ -166,6 +158,16 @@ nav{
 }
 #slider{
     margin-top: 95px;
+}
+#about{
+    width: 100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+}
+#about img{
+    width: 100%;
 }
 .container{
     display: none;
